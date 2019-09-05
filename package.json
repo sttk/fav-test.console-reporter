@@ -1,0 +1,55 @@
+{
+  "name": "@fav/test.console-reporter",
+  "version": "0.0.0",
+  "description": "Output test result by @fav/test.framework to console",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "lib/"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "test": "node ./test/run-test.js && node ./test/lib/index.js",
+    "coverage": "nyc --reporter=lcov --reporter=text-summary npm test",
+    "coveralls": "nyc --reporter=text-lcov npm test | coveralls",
+    "build": "npm run lint && npm run coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sttk/fav-test.console-reporter.git"
+  },
+  "keywords": [
+    "reporter",
+    "test",
+    "fav",
+    "console"
+  ],
+  "author": "Takayuki Sato",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sttk/fav-test.console-reporter/issues"
+  },
+  "homepage": "https://github.com/sttk/fav-test.console-reporter#readme",
+  "dependencies": {
+    "@fav/cli.text-style": "^0.2.0",
+    "@fav/prop.define": "^1.0.0",
+    "@fav/text.diff": "^0.2.0",
+    "@fav/text.escape": "^1.0.5",
+    "@fav/text.repeat": "^1.0.4"
+  },
+  "devDependencies": {
+    "@fav/cli.parse-argv": "^0.2.0",
+    "@fav/test.framework": "^0.2.2",
+    "@fav/text.starts-with": "^1.0.2",
+    "@fav/text.unique": "^1.0.2",
+    "@xslet/platform": "^0.2.1",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "coveralls": "^3.0.6",
+    "eslint": "^6.3.0",
+    "nyc": "^14.1.1",
+    "promise-polyfill": "^8.1.3",
+    "semver": "^6.3.0",
+    "should": "^13.2.3"
+  }
+}

@@ -1,0 +1,15 @@
+
+
+  hooks
+runs before all tests in this block
+runs before each test in this block
+    ✓ test case 1
+runs after each test in this block
+runs before each test in this block
+    ✓ test case 2
+runs after each test in this block
+runs after all tests in this block
+
+
+  2 passing (7ms)
+

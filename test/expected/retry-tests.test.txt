@@ -1,0 +1,25 @@
+
+
+  retries (2 times)
+    1) should succeed on the 3rd try
+
+  retries (3 times)
+    ✓ should succeed on the 3rd try
+
+
+  1 passing (13ms)
+  1 failing
+
+  1) retries (2 times)
+       should succeed on the 3rd try:
+
+      AssertionError: expected false to be true
+      + expected - actual
+
+      -false
+      +true
+
+
+
+
+

@@ -1,0 +1,25 @@
+
+
+  Array
+    #indexOf()
+      ✓ should return -1 unless present
+
+  Array
+    #indexOf()
+      ✓ should return -1 unless present
+      ✓ should return the index when present
+
+  Array
+    #indexOf()
+      ✓ should return -1 unless present
+      ✓ should return the index when present
+    #concat()
+      ✓ should return a new Array
+
+  Array
+    #indexOf()
+      ✓ should return -1 unless present
+
+
+  7 passing (14ms)
+

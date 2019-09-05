@@ -1,0 +1,10 @@
+
+
+  add()
+    ✓ correctly adds 2 args
+    ✓ correctly adds 3 args
+    ✓ correctly adds 4 args
+
+
+  3 passing (11ms)
+

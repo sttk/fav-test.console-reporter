@@ -1,0 +1,72 @@
+
+
+  hooks (before/after)
+    1) "before all" hook
+    2) "after all" hook
+
+  describing hooks (before/after)
+    3) "before all" hook: BeforeHook
+    4) "after all" hook: AfterHook
+
+  hooks (beforeEach/afterEach)
+    5) "before each" hook for "test case 1"
+    6) "after each" hook for "test case 1"
+
+  describing hooks (beforeEach/afterEach)
+    7) "before each" hook: BeforeEachHook for "test case 1"
+    8) "after each" hook: AfterEachHook for "test case 1"
+
+
+  0 passing (17ms)
+  8 failing
+
+  1) hooks (before/after)
+       "before all" hook:
+     Error: runs before all tests in this block
+      at Context.<anonymous> (test/fixtures/describing-hooks.test.js:7:11)
+      at processImmediate (internal/timers.js:439:21)
+
+  2) hooks (before/after)
+       "after all" hook:
+     Error: runs after all tests in this block
+      at Context.<anonymous> (test/fixtures/describing-hooks.test.js:12:11)
+      at processImmediate (internal/timers.js:439:21)
+
+  3) describing hooks (before/after)
+       "before all" hook: BeforeHook:
+     Error: runs before all tests in this block
+      at Context.<anonymous> (test/fixtures/describing-hooks.test.js:36:11)
+      at processImmediate (internal/timers.js:439:21)
+
+  4) describing hooks (before/after)
+       "after all" hook: AfterHook:
+     Error: runs after all tests in this block
+      at Context.<anonymous> (test/fixtures/describing-hooks.test.js:41:11)
+      at processImmediate (internal/timers.js:439:21)
+
+  5) hooks (beforeEach/afterEach)
+       "before each" hook for "test case 1":
+     Error: runs before each test in this block
+      at Context.<anonymous> (test/fixtures/describing-hooks.test.js:65:11)
+      at processImmediate (internal/timers.js:439:21)
+
+  6) hooks (beforeEach/afterEach)
+       "after each" hook for "test case 1":
+     Error: runs after each test in this block
+      at Context.<anonymous> (test/fixtures/describing-hooks.test.js:70:11)
+      at processImmediate (internal/timers.js:439:21)
+
+  7) describing hooks (beforeEach/afterEach)
+       "before each" hook: BeforeEachHook for "test case 1":
+     Error: runs before each test in this block
+      at Context.<anonymous> (test/fixtures/describing-hooks.test.js:84:11)
+      at processImmediate (internal/timers.js:439:21)
+
+  8) describing hooks (beforeEach/afterEach)
+       "after each" hook: AfterEachHook for "test case 1":
+     Error: runs after each test in this block
+      at Context.<anonymous> (test/fixtures/describing-hooks.test.js:89:11)
+      at processImmediate (internal/timers.js:439:21)
+
+
+

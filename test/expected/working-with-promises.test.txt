@@ -1,0 +1,17 @@
+
+
+  #find()
+    ✓ respond with matching records
+    1) should complete this test
+
+
+  1 passing (10ms)
+  1 failing
+
+  1) #find()
+       should complete this test:
+     Error: Resolution method is overspecified. Specify a callback *or* return a Promise; not both.
+
+
+
+

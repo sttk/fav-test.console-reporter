@@ -1,0 +1,31 @@
+
+
+before every test in every file
+test run
+  ✓ test
+
+  suite1
+before every test in every file
+test1 run
+    ✓ test1
+    suite2
+before every test in every file
+test2 run
+      ✓ test2
+
+before every test in every file
+test3 run
+  ✓ test3
+
+  suite4
+before every test in every file
+test4 run
+    ✓ test4
+    suite5
+before every test in every file
+test5 run
+      ✓ test5
+
+
+  6 passing (9ms)
+

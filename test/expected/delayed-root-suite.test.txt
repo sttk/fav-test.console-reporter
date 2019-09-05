@@ -1,0 +1,8 @@
+
+
+  my suite
+    ✓ my test
+
+
+  1 passing (8ms)
+
