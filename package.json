@@ -1,6 +1,6 @@
 {
   "name": "@fav/test.console-reporter",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Output test result by @fav/test.framework to console",
   "main": "index.js",
   "files": [
