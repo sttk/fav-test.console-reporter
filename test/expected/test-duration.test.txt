@@ -2,12 +2,12 @@
 
   durations
     when slow
-      ✓ should highlight in red (206ms)
+      ✓ should highlight in red (202ms)
     when reasonable
       ✓ should highlight in yellow (204ms)
     when fast
       ✓ should highlight in green
 
 
-  3 passing (623ms)
+  3 passing (615ms)
 

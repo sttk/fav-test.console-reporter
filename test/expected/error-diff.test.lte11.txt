@@ -16,7 +16,7 @@
 
   1) error-diff
        compare same type:
-     AssertionError [ERR_ASSERTION]: true == false
+     AssertionError: ==
      + expected - actual
 
      -true
@@ -27,7 +27,7 @@
 
   2) error-diff
        compare different type:
-     AssertionError [ERR_ASSERTION]: true == 'true'
+     AssertionError: ==
      + expected - actual
 
      -true
@@ -38,27 +38,13 @@
 
   3) error-diff
        compare same content objects:
-     AssertionError [ERR_ASSERTION]: {
-  a: 1
-} == {
-  a: 1
-}
+     AssertionError: ==
       at Context.<anonymous> (test/fixtures/error-diff.test.js:18:12)
       at processImmediate (internal/timers.js:461:21)
 
   4) error-diff
        compare different content objects deeply:
-     AssertionError [ERR_ASSERTION]: Expected values to be loosely deep-equal:
-
-{
-  a: 1
-}
-
-should loosely deep-equal
-
-{
-  a: 2
-}
+     AssertionError: deepEqual
      + expected - actual
 
       {
@@ -71,19 +57,7 @@ should loosely deep-equal
 
   5) error-diff
        display add diff:
-     AssertionError [ERR_ASSERTION]: Expected values to be loosely deep-equal:
-
-{
-  a: 1
-}
-
-should loosely deep-equal
-
-{
-  a: 1,
-  b: 2,
-  c: 3
-}
+     AssertionError: deepEqual
      + expected - actual
 
       {
@@ -97,19 +71,7 @@ should loosely deep-equal
 
   6) error-diff
        display delete diff:
-     AssertionError [ERR_ASSERTION]: Expected values to be loosely deep-equal:
-
-{
-  a: 1,
-  b: 2,
-  c: 3
-}
-
-should loosely deep-equal
-
-{
-  a: 1
-}
+     AssertionError: deepEqual
      + expected - actual
 
       {
@@ -123,57 +85,7 @@ should loosely deep-equal
 
   7) error-diff
        different multiple blocks:
-     AssertionError [ERR_ASSERTION]: Expected values to be loosely deep-equal:
-
-{
-  a: true,
-  b: {
-    c: 'A',
-    d: 1,
-    f: {
-      g: -23,
-      i: 'A',
-      j: [
-        1,
-        2,
-        3
-      ]
-    }
-  },
-  k: 1,
-  l: 2,
-  m: 3,
-  n: [
-    4,
-    5
-  ]
-}
-
-should loosely deep-equal
-
-{
-  a: false,
-  b: {
-    c: 'A',
-    d: 1,
-    f: {
-      g: -23,
-      i: 'A',
-      j: [
-        1,
-        2,
-        3
-      ]
-    }
-  },
-  k: 1,
-  l: 2,
-  m: 3,
-  n: [
-    4,
-    6
-  ]
-}
+     AssertionError: deepEqual
      + expected - actual
 
       {
@@ -198,25 +110,7 @@ should loosely deep-equal
 
   8) error-diff
        different multiple blocks but nearly:
-     AssertionError [ERR_ASSERTION]: Expected values to be loosely deep-equal:
-
-{
-  a: true,
-  b: {
-    c: 'ABC',
-    d: 1
-  }
-}
-
-should loosely deep-equal
-
-{
-  a: false,
-  b: {
-    c: 'aaa',
-    d: 1
-  }
-}
+     AssertionError: deepEqual
      + expected - actual
 
       {

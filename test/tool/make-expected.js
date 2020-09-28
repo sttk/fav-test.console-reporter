@@ -13,6 +13,7 @@ fs.readdir(fixturesDir, function(err, files) {
   if (err) {
     throw err;
   }
+
   files.forEach(function(file) {
     var expectedFile = path.basename(file, '.js') + '.txt';
     var expectedPath = path.resolve(expectedDir, expectedFile);
@@ -33,4 +34,3 @@ fs.readdir(fixturesDir, function(err, files) {
     ].join(' '));
   });
 });
-

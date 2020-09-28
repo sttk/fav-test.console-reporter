@@ -1,14 +1,14 @@
 
 
   a suite of tests
-    ✓ should take less than 500ms (306ms)
-    ✓ should take less than 500ms as well (250ms)
+    ✓ should take less than 500ms (305ms)
+    ✓ should take less than 500ms as well (252ms)
 
   a suite of tests (error)
     1) should take less than 200ms
     2) should take less than 200ms as well
 
-  ✓ should take less than 500ms (304ms)
+  ✓ should take less than 500ms (303ms)
   3) should take less than 200ms (error)
 
   a suite of tests (hook)
@@ -24,25 +24,25 @@
   1) a suite of tests (error)
        should take less than 200ms:
      Error: Timeout of 200ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves.
-      at listOnTimeout (internal/timers.js:531:17)
-      at processTimers (internal/timers.js:475:7)
+      at listOnTimeout (internal/timers.js:554:17)
+      at processTimers (internal/timers.js:497:7)
 
   2) a suite of tests (error)
        should take less than 200ms as well:
      Error: Timeout of 200ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves.
-      at listOnTimeout (internal/timers.js:531:17)
-      at processTimers (internal/timers.js:475:7)
+      at listOnTimeout (internal/timers.js:554:17)
+      at processTimers (internal/timers.js:497:7)
 
   3) should take less than 200ms (error):
      Error: Timeout of 200ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves.
-      at listOnTimeout (internal/timers.js:531:17)
-      at processTimers (internal/timers.js:475:7)
+      at listOnTimeout (internal/timers.js:554:17)
+      at processTimers (internal/timers.js:497:7)
 
   4) a suite of tests (hook error)
        "before each" hook for "test":
      Error: Timeout of 300ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves.
-      at listOnTimeout (internal/timers.js:531:17)
-      at processTimers (internal/timers.js:475:7)
+      at listOnTimeout (internal/timers.js:554:17)
+      at processTimers (internal/timers.js:497:7)
 
 
 

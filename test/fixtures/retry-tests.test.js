@@ -2,7 +2,7 @@
 
 var Promise = (typeof Promise === 'function') ? Promise :
               require('promise-polyfill');
-var chkEnv = require('../tool/chk-env');
+var chkEnv = require('../tool/check-env');
 
 var chai = require('chai');
 if (chkEnv.isSupportES6()) {

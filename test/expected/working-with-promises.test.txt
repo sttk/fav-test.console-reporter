@@ -5,13 +5,14 @@
     1) should complete this test
 
 
-  1 passing (10ms)
+  1 passing (6ms)
   1 failing
 
   1) #find()
        should complete this test:
      Error: Resolution method is overspecified. Specify a callback *or* return a Promise; not both.
-
+      at Immediate._onImmediate (node_modules/promise-polyfill/lib/index.js:79:13)
+      at processImmediate (internal/timers.js:461:21)
 
 
 

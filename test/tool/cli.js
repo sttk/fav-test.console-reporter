@@ -1,15 +1,23 @@
 'use strict';
 
+var path = require('path');
 var parseArgv = require('@fav/cli.parse-argv');
 var Framework = require('@fav/test.framework');
+var define = require('@fav/prop.define');
+
 var ConsoleReporter = require('../..');
-var path = require('path');
 
 // Because error.toString() returns a different string by Node version.
-var assert = require('assert');
-var define = require('@fav/prop.define');
 var $tatic = require('../../lib/static');
+var define = require('@fav/prop.define');
+var assert = require('assert');
 define.override($tatic, function getErrorMessage(node) {
+  var versions = process.version.slice(1).split('.');
+  var majorVersion = Number(versions[0]);
+  if (majorVersion >= 12) {
+    return getErrorMessage.$uper(node);
+  }
+
   var error = node.error;
   if (error instanceof assert.AssertionError) {
     return error.constructor.name + ': ' + error.operator;
@@ -70,10 +78,9 @@ function run() {
 function onExit() {
   framework.emit('result');
 
-  if (reporter.errored.length > 0) {
-    reporter.write('');
-    reporter.write('');
+  if (reporter.errors && reporter.errors.length > 0) {
+    console.log();
+    console.log();
     process.exit(1);
   }
 }
-

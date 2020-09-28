@@ -1,35 +1,29 @@
 'use strict';
 
-var define = require('@fav/prop.define');
-var immutable = define.immutable;
-
-var colors = require('@fav/cli.text-style');
-
-var implementWriter = require('./lib/writer');
+var implementEvents = require('./lib/events');
+var implementOutput = require('./lib/output');
 var implementSuite = require('./lib/suite');
 var implementPass = require('./lib/pass');
 var implementSkip = require('./lib/skip');
 var implementError = require('./lib/error');
-var implementResult = require('./lib/result');
 
-require('./lib/error-node-tree');
-require('./lib/error-diff');
-require('./lib/error-stack');
+require('./lib/result/');
+require('./lib/result/error-tree');
+require('./lib/result/error-diff');
+require('./lib/result/error-stack');
 
-function ConsoleReporter(framework, envOrColorDepth) {
+function ConsoleReporter(fw, envOrColorDepth) {
+  /* istanbul ignore if */
   if (!(this instanceof ConsoleReporter)) {
-    return new ConsoleReporter(framework, envOrColorDepth);
+    return new ConsoleReporter(envOrColorDepth);
   }
 
-  immutable(this, 'framework', framework);
-  immutable(this, 'colors', colors(envOrColorDepth));
-
-  implementWriter(this);
+  implementEvents(this, fw);
+  implementOutput(this, envOrColorDepth);
   implementSuite(this);
   implementPass(this);
   implementSkip(this);
   implementError(this);
-  implementResult(this);
 }
 
 module.exports = ConsoleReporter;

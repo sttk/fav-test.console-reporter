@@ -27,5 +27,5 @@ test5 run
       ✓ test5
 
 
-  6 passing (9ms)
+  6 passing (5ms)
 

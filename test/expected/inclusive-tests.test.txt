@@ -20,6 +20,6 @@
 after in "outer" will be executed
 
 
-  2 passing (7ms)
+  2 passing (5ms)
   6 pending
 

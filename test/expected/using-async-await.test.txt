@@ -4,5 +4,5 @@
     ✓ respond with matching records
 
 
-  1 passing (15ms)
+  1 passing (3ms)
 
