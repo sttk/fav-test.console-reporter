@@ -5,11 +5,12 @@
   "main": "index.js",
   "files": [
     "index.js",
-    "lib/"
+    "lib"
   ],
   "scripts": {
     "lint": "eslint .",
-    "test": "node ./test/run-test.js && node ./test/lib/index.js",
+    "prepare-test": "node ./test/tool/make-expected.js",
+    "test": "node ./test/index.js && node ./test/utils/index.js",
     "coverage": "nyc --reporter=lcov --reporter=text-summary npm test",
     "coveralls": "nyc --reporter=text-lcov npm test | coveralls",
     "build": "npm run lint && npm run coverage"
@@ -30,26 +31,30 @@
     "url": "https://github.com/sttk/fav-test.console-reporter/issues"
   },
   "homepage": "https://github.com/sttk/fav-test.console-reporter#readme",
-  "dependencies": {
-    "@fav/cli.text-style": "^0.2.0",
-    "@fav/prop.define": "^1.0.0",
-    "@fav/text.diff": "^0.2.0",
-    "@fav/text.escape": "^1.0.5",
-    "@fav/text.repeat": "^1.0.4"
-  },
   "devDependencies": {
     "@fav/cli.parse-argv": "^0.2.0",
     "@fav/test.framework": "^0.2.2",
     "@fav/text.starts-with": "^1.0.2",
     "@fav/text.unique": "^1.0.2",
-    "@xslet/platform": "^0.2.1",
+    "@xslet/platform": "^0.3.2",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
-    "coveralls": "^3.0.6",
-    "eslint": "^6.3.0",
-    "nyc": "^14.1.1",
+    "coveralls": "^3.1.0",
+    "eslint": "^7.9.0",
+    "mocha": "^8.1.3",
+    "nyc": "^15.1.0",
     "promise-polyfill": "^8.1.3",
-    "semver": "^6.3.0",
     "should": "^13.2.3"
+  },
+  "dependencies": {
+    "@fav/cli.text-style": "^0.2.0",
+    "@fav/prop.define": "^1.0.0",
+    "@fav/prop.enum-all-keys": "^1.0.2",
+    "@fav/text.diff": "^0.2.0",
+    "@fav/text.escape": "^1.0.5",
+    "@fav/text.repeat": "^1.0.4",
+    "@fav/type.is-array": "^1.0.2",
+    "@fav/type.is-plain-object": "^1.0.2",
+    "@fav/type.is-string": "^1.0.2"
   }
 }

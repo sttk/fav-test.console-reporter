@@ -1,6 +1,6 @@
 'use strict';
 
-var chkEnv = require('../tool/chk-env');
+var chkEnv = require('../tool/check-env');
 
 var should = require('should');
 var assert = require('assert');

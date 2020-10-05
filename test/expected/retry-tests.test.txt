@@ -7,19 +7,20 @@
     ✓ should succeed on the 3rd try
 
 
-  1 passing (13ms)
+  1 passing (7ms)
   1 failing
 
   1) retries (2 times)
        should succeed on the 3rd try:
+     AssertionError: expected false to be true
+     + expected - actual
 
-      AssertionError: expected false to be true
-      + expected - actual
+     -false
+     +true
 
-      -false
-      +true
-
-
+      at /Users/ryusi/home/oss/github/fav/test/fav-test.console-reporter/test/fixtures/retry-tests.test.js:46:28
+      at Immediate.<anonymous> (node_modules/promise-polyfill/lib/index.js:79:13)
+      at processImmediate (internal/timers.js:461:21)
 
 
 

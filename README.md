@@ -15,7 +15,7 @@ To install from npm:
 $ npm install --save @fav/test.console-reporter
 ```
 
-***NOTE:*** *npm < 2.7.0 does not support scoped package, but old version Node.js supports it. So when you use such older npm, you should download this package from [github.com][repo-url], and move it in `node_modules/@fav/test.console-reporter/` directory manually.*
+***NOTE:*** *npm < 2.7.0 does not support scoped package, but old versions of Node.js support it. So when you use such older npm, you should download this package from [github.com][repo-url], and move it in `node_modules/@fav/test.console-reporter/` directory manually.*
 
 
 ## Usage
@@ -56,13 +56,13 @@ fw.run(function() {
 
 ## Checked
 
-### Node.js (11〜12)
+### Node.js (11〜14)
 
-| Platform  |   11   |   12   |
-|:---------:|:------:|:------:|
-| macOS     |&#x25ef;|&#x25ef;|
-| Windows10 |&#x25ef;|&#x25ef;|
-| Linux     |&#x25ef;|&#x25ef;|
+| Platform  |   11   |   12   |   13   |   14   |
+|:---------:|:------:|:------:|:------:|:------:|
+| macOS     |&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|
+| Windows10 |&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|
+| Linux     |&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|
 
 ### Node.js (4〜10)
 
@@ -91,7 +91,7 @@ fw.run(function() {
 
 ## License
 
-Copyright (C) 2019 Takayuki Sato
+Copyright (C) 2019-2020 Takayuki Sato
 
 This program is free software under [MIT][mit-url] License.
 See the file LICENSE is this distribution for more details.

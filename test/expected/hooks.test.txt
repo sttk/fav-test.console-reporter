@@ -11,5 +11,5 @@ runs after each test in this block
 runs after all tests in this block
 
 
-  2 passing (7ms)
+  2 passing (3ms)
 

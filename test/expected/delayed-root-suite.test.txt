@@ -4,5 +4,5 @@
     ✓ my test
 
 
-  1 passing (8ms)
+  1 passing (6ms)
 

@@ -5,6 +5,6 @@
       - should return -1 when the value is not present
 
 
-  0 passing (4ms)
+  0 passing (2ms)
   1 pending
 

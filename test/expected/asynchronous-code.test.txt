@@ -3,7 +3,7 @@
   User
     #save()
       ✓ should save without error (1003ms)
-      ✓ should save without error (2) (1005ms)
+      ✓ should save without error (2) (1001ms)
 
 
   2 passing (2s)

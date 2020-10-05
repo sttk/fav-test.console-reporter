@@ -11,5 +11,5 @@ test5 run
       ✓ test5
 
 
-  3 passing (9ms)
+  3 passing (4ms)
 
